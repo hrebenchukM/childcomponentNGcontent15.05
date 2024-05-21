@@ -1,0 +1,18 @@
+
+
+<!-- <div class="card">
+<input [ngModel]="userName" (ngModelChange)="onNameChange($event)"/>
+</div> -->
+<!-- Здесь определено входное свойство userName, к которому привязано текстовое поле input.
+  Для связи используется атрибут [ngModel], который связывает значение атрибута value у текстового поля со свойством userName.
+
+Для отслеживания изменения модели этого поля с помощью атрибута (ngModelChange) привязываем метод, который срабатывает при изменении значения. То есть ngModelChange - это фактически событие изменения введенного значения, поэтому здесь действует привязка к событию. -->
+
+<div class="card">
+
+    <h2> {{ userName.name }} </h2>
+    <p>{{ isDiscount ? (userName.price * 0.85) : userName.price }}₴ </p>
+    <ng-content></ng-content>
+    <button (click)="onNameChange()">Ознакомиться</button>
+</div>
+

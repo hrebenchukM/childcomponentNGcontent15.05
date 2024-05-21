@@ -1,0 +1,26 @@
+.product {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+  .discount {
+    background-color: #e94533;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .discount:hover {
+    transform: scale(1.05);
+  }

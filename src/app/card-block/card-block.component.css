@@ -1,0 +1,19 @@
+.card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+  }
+
+  .card button {
+  background-color: #5100ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+  
+  .card button:hover {
+    transform: scale(1.05);
+  }

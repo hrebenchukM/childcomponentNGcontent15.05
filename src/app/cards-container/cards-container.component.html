@@ -1,0 +1,27 @@
+
+
+<!-- Bind 2Component -->
+<!-- <app-card-block [(userName)]="name"></app-card-block>
+<div>Выбранное имя: {{name}}</div>  -->
+
+
+
+<button  class="discount" (click)="discount()">Хочу скидку</button>
+
+
+<div class="cards">
+  <div *ngFor="let userName of products">
+    <app-card-block [userName]="userName" [isDiscount]="isDiscount" (userNameChange)="nameChange($event)">
+      
+    <b #headerContent>{{ userName.color }}</b>
+
+    </app-card-block>
+    </div>
+  </div>
+  
+
+  <div *ngIf="selected" class="product">
+    <h2>{{ selected.name }}</h2>
+    <p>{{ selected.price }}</p>
+    <p>{{ selected.description }}</p>
+  </div>
